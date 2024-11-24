@@ -4,39 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sri Lankan Food Facts</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f8f9fa;
-            color: #343a40;
-            margin: 0;
-            padding: 20px;
-        }
-        h1 {
-            text-align: center;
-            color: #007bff;
-        }
-        .fact {
-            background-color: #ffffff;
-            border: 1px solid #dee2e6;
-            border-radius: 5px;
-            padding: 15px;
-            margin: 10px 0;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-        .fact h2 {
-            margin: 0;
-            font-size: 1.5em;
-        }
-        .fact p {
-            margin: 5px 0 0;
-        }
-        footer {
-            text-align: center;
-            margin-top: 20px;
-            font-size: 0.9em;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
@@ -48,59 +16,7 @@
         <p>&copy; 2024 Sri Lankan Food Facts App</p>
     </footer>
 
-    <script>
-        const foodFacts = [
-            {
-                fact: "Rice and Curry",
-                description: "The staple meal in Sri Lanka is rice served with a variety of curries. It's common to have multiple curries on the plate, including vegetable, fish, and meat options."
-            },
-            {
-                fact: "Spices Galore",
-                description: "Sri Lankan cuisine is known for its use of spices. Common spices include cinnamon, cardamom, cloves, and curry leaves, which are often used to enhance the flavor of dishes."
-            },
-            {
-                fact: "Hoppers",
-                description: "A popular breakfast item, hoppers (appa) are bowl-shaped pancakes made from fermented rice flour and coconut milk. They can be served plain or with an egg in the center."
-            },
-            {
-                fact: "Kottu Roti",
-                description: "This street food dish is made from chopped roti (flatbread) stir-fried with vegetables, eggs, and/or meat. It's often made to order and is a favorite among locals."
-            },
-            {
-                fact: "Sambol",
-                description: "A traditional condiment, sambol is made from ground coconut, chili, and other spices. There are many variations, including pol sambol (coconut sambol) and lunu miris (onion and chili sambol)."
-            },
-            {
-                fact: "Tea Culture",
-                description: "Sri Lanka is one of the largest tea producers in the world, and tea is an integral part of the culture. Ceylon tea is famous globally, and it's often enjoyed with milk and sugar."
-            },
-            {
-                fact: "Fruits and Vegetables",
-                description: "Sri Lanka's tropical climate allows for a wide variety of fruits and vegetables, including jackfruit, rambutan, and mangoes, which are often used in cooking."
-            },
-            {
-                fact: "Seafood",
-                description: "Being an island nation, seafood is a significant part of the diet. Fish, prawns, and crabs are commonly used in various dishes, often cooked with coconut milk and spices."
-            },
-            {
-                fact: "Festivals and Food",
-                description: "Food plays a central role in Sri Lankan festivals. During celebrations like Sinhala and Tamil New Year, special dishes are prepared, including sweet treats like kavum (oil cakes)."
-            },
-            {
-                fact: "Health Benefits",
-                description: "Many traditional Sri Lankan dishes are healthy, incorporating fresh vegetables, legumes, and spices known for their medicinal properties."
-            }
-        ];
-
-        const factsContainer = document.getElementById('facts-container');
-
-        foodFacts.forEach(item => {
-            const factDiv = document.createElement('div');
-            factDiv.className = 'fact';
-            factDiv.innerHTML = `<h2>${item.fact}</h2><p>${item.description}</p>`;
-            factsContainer.appendChild(factDiv);
-        });
-    </script>
+    <script src="script.js"></script>
 
 </body>
 </html>
